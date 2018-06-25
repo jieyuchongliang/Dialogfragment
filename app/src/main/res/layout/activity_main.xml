@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="greendaotest.wq.com.demo.MainActivity">
+
+    <Button
+        android:id="@+id/btn_sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_btn"
+        android:text="重力感应" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="有界水波纹" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="无界水波纹" />
+
+    <Button
+        android:id="@+id/tv_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="数组排序" />
+
+    <Button
+        android:id="@+id/tv_list_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="验证集合" />
+
+    <Button
+        android:id="@+id/tv_two_list_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="双列列表显示" />
+
+    <Button
+        android:id="@+id/tv_window_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="窗口管理" />
+
+    <Button
+        android:id="@+id/tv_test_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="测试dialogfragment" />
+
+</LinearLayout>
