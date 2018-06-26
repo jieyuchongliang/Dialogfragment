@@ -17,10 +17,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SensorActivity"
+            android:name=".activity.SensorActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|navigation" />
-        <activity android:name=".ListViewActivity" />
-        <activity android:name=".activity.WMActivity"></activity>
+        <activity android:name=".activity.ListViewActivity" />
+        <activity android:name=".activity.WMActivity" />
+        <activity android:name=".activity.RVCVActivity"></activity>
     </application>
 
 </manifest>

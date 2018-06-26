@@ -1,4 +1,4 @@
-package greendaotest.wq.com.demo;
+package greendaotest.wq.com.demo.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+import greendaotest.wq.com.demo.R;
 import greendaotest.wq.com.demo.adapter.TwoListAdapter;
 import greendaotest.wq.com.demo.bean.Animal;
 

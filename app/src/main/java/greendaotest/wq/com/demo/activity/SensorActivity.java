@@ -1,4 +1,4 @@
-package greendaotest.wq.com.demo;
+package greendaotest.wq.com.demo.activity;
 
 import android.os.Bundle;
 import android.provider.Settings;
@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
+import greendaotest.wq.com.demo.R;
 import greendaotest.wq.com.demo.utils.ScreenSwitchUtils;
 
 public class SensorActivity extends AppCompatActivity implements ScreenSwitchUtils.OnScreenChangedListener {

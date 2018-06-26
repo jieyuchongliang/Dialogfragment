@@ -11,7 +11,11 @@ import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
 
+import greendaotest.wq.com.demo.activity.ListViewActivity;
+import greendaotest.wq.com.demo.activity.RVCVActivity;
+import greendaotest.wq.com.demo.activity.SensorActivity;
 import greendaotest.wq.com.demo.activity.WMActivity;
+import greendaotest.wq.com.demo.widget.LikeIosDialog;
 import greendaotest.wq.com.demo.widget.TestDialog;
 
 public class MainActivity extends AppCompatActivity {
@@ -53,20 +57,39 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.tv_two_list_test).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,ListViewActivity.class));
+                startActivity(new Intent(MainActivity.this, ListViewActivity.class));
             }
         });
         findViewById(R.id.tv_window_manager).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,WMActivity.class));
+                startActivity(new Intent(MainActivity.this, WMActivity.class));
             }
         });
         findViewById(R.id.tv_test_dialog).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 TestDialog dialog = new TestDialog();
-                dialog.show(getSupportFragmentManager(),"TestDialog");
+                dialog.show(getSupportFragmentManager(), "TestDialog");
+            }
+        });
+        findViewById(R.id.tv_like_ios).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                LikeIosDialog dialog = new LikeIosDialog();
+                Bundle bundle = new Bundle();
+                bundle.putString("top", "提示");
+                bundle.putString("bottomLeft", "暂停");
+                bundle.putString("bottomRight", "开始");
+                dialog.setArguments(bundle);
+                dialog.show(getSupportFragmentManager(), "LikeIosDialog");
+            }
+        });
+
+        findViewById(R.id.tv_recycler_cardview).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, RVCVActivity.class));
             }
         });
     }
@@ -85,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private List<String> linshi = new ArrayList<>();
+
     private void addMapMethod(List<String> list) {
         if (list.size() > 0) {
             String year = list.get(0).substring(0, 4);

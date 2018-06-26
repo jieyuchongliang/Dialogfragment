@@ -71,4 +71,19 @@
         android:padding="10dp"
         android:text="测试dialogfragment" />
 
+    <Button
+        android:id="@+id/tv_like_ios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="仿苹果提示" />
+    <Button
+        android:id="@+id/tv_recycler_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="列表cardview" />
+
 </LinearLayout>

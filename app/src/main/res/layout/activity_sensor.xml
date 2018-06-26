@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="greendaotest.wq.com.demo.SensorActivity">
+    tools:context="greendaotest.wq.com.demo.activity.SensorActivity">
 
 </android.support.constraint.ConstraintLayout>
